@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Food Preference Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="form-container">
+                <h2>Party Food Preferences</h2>
+                <form action="/submit" method="post">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <div class="wrapper">
+                        <header>Food Preferences: </header>
+                        <div class="poll-area">
+                            <label for="">
+                                <div class="row">
+                                    <div class="column">
+                                        <span class="circle"></span>
+                                        <span class="text">Vegetarian</span>
+                                    </div>
+                                    <!-- <span class="percent">30%</span> -->
+                                </div>
+                                <!-- <div class="progress" style="--w:30;"></div> -->
+                            </label>
+                            <label for="">
+                                <div class="row">
+                                    <div class="column">
+                                        <span class="circle"></span>
+                                        <span class="text">Non-Vegetarian</span>
+                                    </div>
+                                    <!-- <span class="percent">60%</span> -->
+                                </div>
+                                <!-- <div class="progress" style="--w:60;"></div> -->
+                            </label>
+                            <label for="">
+                                <div class="row">
+                                    <div class="column">
+                                        <span class="circle"></span>
+                                        <span class="text">Alcoholic</span>
+                                    </div>
+                                    <!-- <span class="percent">70%</span> -->
+                                </div>
+                                <!-- <div class="progress" style="--w:70;"></div> -->
+                            </label>
+                            <label for="">
+                                <div class="row">
+                                    <div class="column">
+                                        <span class="circle"></span>
+                                        <span class="text">Non-Alcoholic</span>
+                                    </div>
+                                    <!-- <span class="percent">50%</span> -->
+                                </div>
+                                <!-- <div class="progress" style="--w:50;"></div> -->
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="alien_container">
+                <div id="alien">
+                    <img src="/images/alien_using_this_D0A2F7_add_a_text_Party_Food_-removebg-preview.png"
+                        alt="Alien Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
